@@ -1,0 +1,9 @@
+/*
+Hamburger menu is gemaakt met CSS
+To DO radiobuttens maken van li link in color list menu
+home
+red
+orange
+purple
+green
+ */

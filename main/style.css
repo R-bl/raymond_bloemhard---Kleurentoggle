@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  position: relative;
+  height: 10vh;
+}
+.line {
+  width: 100px;
+  height: 8px;
+  background-color: #252525;
+  margin: 10px;
+  border-style: solid 1px;
+  border-radius: 10px;
+}
+.color-list {
+  list-style-type: none;
+  background-color: crimson;
+}
+
+.hamburger {
+  position: absolute;
+  cursor: pointer;
+  left: 5%;
+  top: 20%;
+}
