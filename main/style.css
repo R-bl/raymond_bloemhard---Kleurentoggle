@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.btn-menu-toggle {
+#btn-menu-toggle {
   position: relative;
   width: 100px;
   height: 100px;
@@ -15,12 +15,13 @@
   cursor: pointer;
 }
 
-.color-menu-list {
+#color-menu {
   position: absolute;
   margin-top: 10px;
   width: 300px;
-  height: 300px;
-  background-color: lightgreen;
+}
+.menu-hide {
+  visibility: hidden;
 }
 
 .radio-buttons input[type="radio"] {

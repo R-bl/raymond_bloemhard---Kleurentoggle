@@ -1,9 +1,8 @@
-/*
-Hamburger menu is gemaakt met CSS
-To DO radiobuttens maken van li link in color list menu
-home
-red
-orange
-purple
-green
- */
+const burgerBtn = document.getElementById('btn-menu-toggle');
+
+burgerBtn.addEventListener('click',function(){
+
+    const colorMenu = document.getElementById('color-menu');
+
+    colorMenu.classList.toggle('menu-hide');
+})
