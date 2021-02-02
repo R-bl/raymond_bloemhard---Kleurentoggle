@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#burger {
+  width: 100px;
+  height: 100px;
+  background-color: lightgray;
+  background-image: url(/main/img/Hamburger_icon.svg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+}
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 100px;
+  width: 300px;
+}
+.hide-sidebar {
+  visibility: hidden;
+}
+
+.sidebar ul {
+  padding-top: 15px;
+}
+.sidebar ul li {
+  line-height: 60px;
+  list-style: none;
+  margin-top: 5px;
+  border: solid 1px white;
+}
+.sidebar ul li a {
+  display: block;
+  padding: 0px 15px;
+  text-decoration: none;
+  color: rgb(59, 59, 59);
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.gray-background-color {
+  background-color: lightgray;
+}
+
+.red-background-color {
+  background-color: red;
+}
+
+.orange-background-color {
+  background-color: orange;
+}
+
+.purple-background-color {
+  background-color: purple;
+}
+
+.green-background-color {
+  background-color: green;
+}
+/* #list {
+  top: 150px;
+  background-color: mediumseagreen;
+  list-style: none;
+}
+#list-item {
+  width: 300px;
+  height: 50px;
+  margin: auto;
+  background-color: mediumpurple;
+}
+a {
+  text-decoration: none;
+  color: rgb(59, 59, 59);
+} */

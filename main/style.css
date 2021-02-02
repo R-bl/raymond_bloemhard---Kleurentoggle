@@ -16,21 +16,27 @@
 
 #color-menu {
   position: absolute;
-  margin-top: 10px;
+  display: fixed;
+  top: 150px;
   width: 300px;
+  height: 500px;
+  background-color: lime;
 }
-.menu-hide {
-  visibility: hidden;
+#color-menu li {
+  height: 50px;
 }
 
-.radio-buttons input[type="radio"] {
-  display: none;
-}
+/* .menu-hide {
+  visibility: hidden;
+} */
+
+/* .radio-buttons input[type="radio"] {
+} */
+
 .radio-buttons label {
-  display: inline-block;
-  
+  display: block;
   width: 100%;
-  height: 50px;
+  height: 71px;
   margin-bottom: 3px;
   padding: 4px 11px;
   font-family: Arial;
@@ -38,37 +44,30 @@
   cursor: pointer;
 }
 .radio-buttons input[type="radio"]:checked + label {
-  
+  background-color: lightsteelblue;
 }
 
-.btn-main {
-  display: inline-block;
-  background-color: orange;
-  width: 100%;
-  height: 50px;
-  margin-bottom: 3px;
-  padding: 4px 11px;
-  font-family: Arial;
-  font-size: 18px;
-  cursor: pointer;
+.btn1 {
+  background-color: lightgray;
 }
-
-.btn1{
-background-color: grey;
-}
-.btn2{
+.btn2 {
   background-color: red;
-  }
-.btn3{
+}
+.btn3 {
   background-color: orange;
-  }
-.btn4{
+}
+.btn4 {
   background-color: purple;
-  }
-.btn5{
+}
+.btn5 {
   background-color: green;
-  }
-li{
-    vertical-align: middle;
-  }
+}
+li {
+  display: flexbox;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-around;
+}
 
+#radioButton {
+}

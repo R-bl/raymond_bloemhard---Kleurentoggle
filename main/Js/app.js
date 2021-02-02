@@ -19,11 +19,18 @@
 
 // Verander de kleuren door het gebruik van keyboard toetsen (1 voor home, 2 voor rood, 3 voor oranje, etc.) ⇒ ****hier heb je dus een nieuw Event Type nodig...
 
-const burgerBtn = document.getElementById('btn-menu-toggle');
 
-burgerBtn.addEventListener('mouseover',function(){
 
-    const colorMenu = document.getElementById('color-menu');
 
-    colorMenu.classList.toggle('menu-hide');
-})
+
+
+
+
+// const burgerBtn = document.getElementById('btn-menu-toggle');
+
+// burgerBtn.addEventListener('mouseover',function(){
+
+//     const colorMenu = document.getElementById('color-menu');
+
+//     colorMenu.classList.toggle('menu-hide');
+// })
