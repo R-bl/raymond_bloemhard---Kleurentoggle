@@ -7,7 +7,7 @@
 #burger {
   width: 100px;
   height: 100px;
-  background-image: url(/main/img/Hamburger_icon.svg.png);
+  background-image: url(/Main/img/Hamburger_icon.svg.png);
   background-repeat: no-repeat;
   background-size: 100%;
   cursor: pointer;
@@ -42,23 +42,23 @@
     "Lucida Sans", Arial, sans-serif;
 }
 
-.home-color {
+.gray {
   background-color: lightgray;
 }
 
-.red-background-color {
+.red {
   background-color: red;
 }
 
-.orange-background-color {
+.orange {
   background-color: orange;
 }
 
-.purple-background-color {
+.purple {
   background-color: purple;
 }
 
-.green-background-color {
+.green {
   background-color: green;
 }
 /* #list {
