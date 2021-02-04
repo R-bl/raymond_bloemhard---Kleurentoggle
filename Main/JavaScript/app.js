@@ -1,3 +1,4 @@
+//toggle burger menu function
 const menuToggle = () => {
 const toggleMenu = document.getElementById('burger');
  toggleMenu.addEventListener('click',function(){
@@ -6,92 +7,60 @@ const toggleMenu = document.getElementById('burger');
  
 });
 };
+//hide menu function
 const hideMenu = () => {
   const sideMenu = document.querySelector('.sidebar');
   sideMenu.classList.toggle('hide-sidebar');
 };
+//constants
+const body = document.body;
+const gray = document.querySelector('.gray');
+const red = document.querySelector('.red');
+const orange = document.querySelector('.orange');
+const purple = document.querySelector('.purple');
+const green = document.querySelector('.green');
 
-// const colorBtns = () =>{
-//   const allBtns = document.getElementById('change-color');
-//   allBtns.addEventListener('click', function(el, i){
+//make gray
+const makeGray = () =>{
+  body.classList.remove('green');
+  body.classList.add('gray');
+  hideMenu();
+}
+gray.addEventListener('click', makeGray);
 
+const makeRed = () =>{
+  body.classList.remove('gray');
+  body.classList.add('red');
+  hideMenu();
+}
+red.addEventListener('click', makeRed);
 
-//   })
-// }
-//Gray
-const grayButton = () =>{
-  const gray = document.querySelector('.gray');
-  gray.addEventListener('click', function(){
-    const myBody = document.body;
-    myBody.classList.add('gray');
-    hideMenu();
-  });
-};
-//Red
-const redButton = () =>{
-  const red = document.querySelector('.red');
-  red.addEventListener('click', function(){
-    const myBody = document.body;
-    myBody.classList.add('red');
-    hideMenu();
-  });
-};
-//orange
-const orangeButton = () =>{
-  const orange = document.querySelector('.orange');
-  orange.addEventListener('click', function(){
-    const myBody = document.body;
-    myBody.classList.add('orange');
-    hideMenu();
-  });
-};
-//purple
-const purpleButton = () =>{
-  const purple = document.querySelector('.purple');
-  purple.addEventListener('click', function(){
-    const myBody = document.body;
-    myBody.classList.add('purple');
-    hideMenu();
-  });
-};
-//green
-const greenButton = () =>{
-  const green = document.querySelector('.green');
-  green.addEventListener('click', function(){
-    const myBody = document.body;
-    myBody.classList.add('green');
-    hideMenu();
-  });
-};
+const makeOrange = () =>{
+  body.classList.remove('red');
+  body.classList.add('orange');
+  hideMenu();
+}
+orange.addEventListener('click', makeOrange);
+
+const makePurple = () =>{
+  body.classList.remove('orange');
+  body.classList.add('purple');
+  hideMenu();
+}
+purple.addEventListener('click', makePurple);
+
+const makeGreen = () =>{
+  body.classList.remove('purple');
+  body.classList.add('green');
+  hideMenu();
+}
+green.addEventListener('click', makeGreen);
+
 menuToggle();
-grayButton();
-redButton();
-orangeButton();
-purpleButton();
-greenButton();
-
-// const changeClassBody = function (){
-//   const bodyElement = document.body;
-//   bodyElement.classList.add('green');
-// };
-
-// const attachEventGreenColor = function(){
-//   const changeColorBtn = document.querySelectorAll('#change-color');
-//   changeColorBtn.addEventListener('click', function(){
-//     changeClassBody();
-//   });
-// };
-// attachEventGreenColor();
 
 
-// const changeColor = () => {
-//   const gray = document.getElementById('gray');
-//   const red = document.getElementById('red');
-//   const orange = document.getElementById('orange');
-//   const purple = document.getElementById('purple');
-//   const green = document.getElementById('green');
-//   gray
-// }
+
+
 
 
 
