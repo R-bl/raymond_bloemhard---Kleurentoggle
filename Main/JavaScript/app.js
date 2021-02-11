@@ -1,17 +1,3 @@
-//toggle burger menu function
-const menuToggle = () => {
-const toggleMenu = document.getElementById('burger');
- toggleMenu.addEventListener('click',function(){
- const sideMenu = document.querySelector('.sidebar');
- sideMenu.classList.toggle('hide-sidebar');
- 
-});
-};
-//hide menu function
-const hideMenu = () => {
-  const sideMenu = document.querySelector('.sidebar');
-  sideMenu.classList.toggle('hide-sidebar');
-};
 //constants
 const body = document.body;
 const gray = document.querySelector('.gray');
@@ -21,10 +7,35 @@ const purple = document.querySelector('.purple');
 const green = document.querySelector('.green');
 
 
+//toggle burger menu function
+const menuToggle = () => {
+const toggleMenu = document.getElementById('burger');
+ toggleMenu.addEventListener('click',function(){
+ const sideMenu = document.querySelector('.sidebar');
+ sideMenu.classList.toggle('hide-sidebar');
+ 
+});
+};
+// color text function
+const getText = () => {
+  const text = document.querySelector('.text-color');
+  text.classList.toggle('hide-text');
+}
+
+
+
+//hide menu function
+const hideMenu = () => {
+  const sideMenu = document.querySelector('.sidebar');
+  sideMenu.classList.toggle('hide-sidebar');
+};
+
+
 const makeGray = () =>{
   body.classList.remove('red','orange','purple','green');
   body.classList.add('gray');
   hideMenu();
+  getText();
 }
 gray.addEventListener('click', makeGray);
 

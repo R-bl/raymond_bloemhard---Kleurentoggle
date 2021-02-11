@@ -3,7 +3,10 @@
   padding: 0%;
   box-sizing: border-box;
 }
-
+body {
+  position: relative;
+  height: 100vh;
+}
 #burger {
   width: 100px;
   height: 100px;
@@ -40,6 +43,24 @@
   text-transform: uppercase;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+}
+
+.text-color {
+  position: absolute;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  line-height: 0;
+  font-size: 64px;
+}
+.hide-text {
+  visibility: hidden;
 }
 
 .gray {
