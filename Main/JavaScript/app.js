@@ -10,7 +10,7 @@ const green = document.querySelector('.green');
 //toggle burger menu function
 const menuToggle = () => {
 const toggleMenu = document.getElementById('burger');
- toggleMenu.addEventListener('click',function(){
+ toggleMenu.addEventListener('mouseover',function(){
  const sideMenu = document.querySelector('.sidebar');
  sideMenu.classList.toggle('hide-sidebar');
  
