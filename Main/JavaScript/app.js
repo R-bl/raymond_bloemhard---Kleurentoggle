@@ -34,8 +34,9 @@ const hideMenu = () => {
 const makeGray = () =>{
   body.classList.remove('red','orange','purple','green');
   body.classList.add('gray');
+  document.querySelector('.text-color').textContent = 'Gray';
   hideMenu();
-  getText();
+  
 }
 gray.addEventListener('click', makeGray);
 
@@ -43,7 +44,9 @@ gray.addEventListener('click', makeGray);
 const makeRed = () =>{
   body.classList.remove('orange','purple','green','gray');
   body.classList.add('red');
+  document.querySelector('.text-color').textContent = 'Red';
   hideMenu();
+  
 }
 red.addEventListener('click', makeRed);
 
@@ -51,25 +54,32 @@ red.addEventListener('click', makeRed);
 const makeOrange = () =>{
   body.classList.remove('purple','green','red','gray');
   body.classList.add('orange');
+  document.querySelector('.text-color').textContent = 'Orange';
   hideMenu();
+  
 }
 orange.addEventListener('click', makeOrange);
 
 const makePurple = () =>{
   body.classList.remove('green','gray','red','orange');
   body.classList.add('purple');
+  document.querySelector('.text-color').textContent = 'Purple';
   hideMenu();
+  
 }
 purple.addEventListener('click', makePurple);
 
 const makeGreen = () =>{
   body.classList.remove('gray','red','orange','purple');
   body.classList.add('green');
+  document.querySelector('.text-color').textContent = 'Green';
   hideMenu();
+  
 }
 green.addEventListener('click', makeGreen);
 
 menuToggle();
+getText();
 
 
 
