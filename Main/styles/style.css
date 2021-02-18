@@ -6,6 +6,7 @@
 body {
   position: relative;
   height: 100vh;
+  overflow: hidden;
 }
 #burger {
   width: 100px;
@@ -47,14 +48,8 @@ body {
 
 .text-color {
   position: absolute;
-  position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
   margin: 0;
   line-height: 0;
   font-size: 64px;
@@ -82,18 +77,9 @@ body {
 .green {
   background-color: green;
 }
-/* #list {
-  top: 150px;
-  background-color: mediumseagreen;
-  list-style: none;
+
+a:hover {
+  position: relative;
+  bottom: 3px;
+  right: 1px;
 }
-#list-item {
-  width: 300px;
-  height: 50px;
-  margin: auto;
-  background-color: mediumpurple;
-}
-a {
-  text-decoration: none;
-  color: rgb(59, 59, 59);
-} */
